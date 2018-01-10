@@ -27,6 +27,7 @@
 		</div>
 		<?php if(isset($stats)) { ?>
 		<div id="stats">
+			<p><?php print translate('faucet_balance'); ?>: <?php print($stats['balance']); ?></p>
 			<p><?php print translate('average_payout'); ?>: <?php print($stats['average_payout']); ?></p>
 			<p><?php print($stats['number_of_payouts']); ?> <?php print translate('payouts'); ?></p>
 		</div>

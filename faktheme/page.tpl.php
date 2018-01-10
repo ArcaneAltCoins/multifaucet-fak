@@ -38,7 +38,7 @@
     <?php if(get_setting('donation_address')) { ?>
 
       <div class="donate">
-        <p>Please consider donating: <strong class="address"></strong></p>
+        <p>Please consider donating: <strong class="address"><?php print(get_setting('donation_address')); ?></strong></p>
         <button class="btn copy">
           <svg class="copy-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <title>copy</title>
@@ -46,7 +46,7 @@
           </svg>
           Copy
         </button>
-        <textarea class="copy-select"><?= get_setting('donation_address'); ?></textarea>
+        <textarea class="copy-select"><?php print(get_setting('donation_address')); ?></textarea>
       </div>
 
     <?php } ?>
@@ -60,6 +60,7 @@
     <?php if(isset($stats)) { ?>
 
       <div class="stats">
+        <p><?= translate('faucet_balance'); ?>: <?= $stats['balance']; ?></p>
         <p><?= translate('average_payout'); ?>: <?= $stats['average_payout']; ?></p>
         <p><?= $stats['number_of_payouts']; ?> <?= translate('payouts'); ?></p>
       </div>
