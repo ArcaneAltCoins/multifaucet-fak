@@ -2,6 +2,7 @@
 <html>
 <head>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68778887-4"></script>
   <script>
@@ -27,6 +28,19 @@
 
   <link rel="stylesheet" href="<?= theme_dir(); ?>css/default.css" type="text/css" />
 
+=======
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Linus & Kalle Lilja" />
+  <meta name="description" content="Got blueballs? Need FAK?" />
+  <meta name="rating" content="General">
+
+  <title><?= $title; ?></title>
+
+  <link rel="stylesheet" href="<?= theme_dir(); ?>css/default.css" type="text/css" />
+
+>>>>>>> a655a86d80b035c44d1e56875b7b603f2cc7ebe7
 </head>
 <body>
 
