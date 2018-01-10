@@ -1,3 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  background: #f7f7f7;
+  line-height: 1.5;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+a {
+  cursor: pointer;
+  color: #0062ff;
+  transition: all 0.25s ease-in-out;
+}
+
+a:hover {
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1rem;
+}
+
+input[type=text] {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background: #f7f7f7;
+  border: 1px solid #a7a7a7;
+  border-radius: 2px;
+  transition: all 0.25s ease-in-out;
+  -webkit-appearance: none;
+}
+
+input[type=text]:hover {
+  border-color: #149dcc;
+}
+
+input[type=text]:focus {
+  outline: 0;
+}
+
+.btn,
+input[type=submit] {
+  cursor: pointer;
+  padding: 0.75rem 2.5rem;
+  outline: none;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #149dcc;
+  border: 1px solid #149dcc;
+  border-radius: 2px;
+  transition: all 0.25s ease-in-out;
+
+  margin: 0rem auto;
+  display: block;
+}
+
+.btn:hover,
+input[type=submit]:hover {
+  background: #099dd0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.content {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.015);
+
+  padding: 2.5rem; 
+  width: 80%;
+  max-width: 40rem;
+}
+
+.content h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.content form input[type=submit] {
+  margin: 1rem auto 1.5rem auto;
+}
+
+/* Donate */
+.donate {
+  border-radius: 0.25rem;
+  background: #f7f7f7;
+  padding: 1rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.donate p {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.donate p > strong {
+  padding: 0 0.25rem;
+  border-radius: 0.25rem; /* Gay */
+  transition: all 0.25s ease-in-out; }
+
+  .donate p > strong.flash {
+    animation-name: flash;
+    animation-duration: 1s;
+}
+
+@keyframes flash {
+  0% { background: transparent; color: #333; }
+  10% { background: #149dcc; color: white; }
+  60% { background: #099dd0; color: white; }
+  100% { background: transparent; color: #333; }
+}
+
+
+.donate .btn {
+  margin: 1rem auto -1.5rem auto; /* hiding textarea */
+}
+
+.copy-icon {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  stroke-width: 0;
+  stroke: white;
+  fill: white;
+}
+
+.copy-select {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+/* Mjeh */
+.powered-by,
+.stats {
+  width: 80%;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.powered-by {
+  margin: 2.5rem 0 0 0;
+}
+
+.stats {
+  margin: 1.5rem;
+}
+
+/*
+
 *{
 	border: none;
 	margin: 0;
@@ -59,14 +246,6 @@ div#database-settings.installer,
 #license-agreement {
 	max-height: 360px;
 	overflow-y:auto;
-}
-
-pre#copyright-notice{
- white-space: pre-wrap;       /* css-3 */
- white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
- white-space: -pre-wrap;      /* Opera 4-6 */
- white-space: -o-pre-wrap;    /* Opera 7 */
- word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
 div.installer input[type="radio"], 
@@ -139,7 +318,7 @@ form #captcha.simple-captcha img{
 	display: block;
 	margin: 0 auto .6em auto;
 	border: 1px solid #ccc;
-	height: 75px; /* prevents the content jump */
+	height: 75px;
 	width: 160px;
 }
 form #captcha.solvemedia #adcopy-outer, 
@@ -320,4 +499,6 @@ img.droplet:nth-of-type(3){
 	img.droplet:nth-of-type(2),img.droplet:nth-of-type(3){
 		display: none;
 		}
-	}
+  }
+
+*/
