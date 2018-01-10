@@ -15,41 +15,9 @@
 
       <h1><?php print($title); ?></h1>
         <?php print($content); ?>
-      <!--<form method="post" action="">
-        <input
-          class="standard_text"
-          id="cryptocoin_address"
-          name="cryptocoin_address"
-          type="text"
-          value=""
-          placeholder="Enter your FAK address here"
-        />
-        
-        <div id="captcha" class="simple-captcha">
-          <img src="./libraries/simple-captcha/simple-php-captcha.php?_CAPTCHA&amp;s=multifaucet&amp;t=0.15817900+1515535155" alt="[captcha]"/>
-        </div>
-
-        <input
-          class="standard_text"
-          id="simple_captcha_code"
-          name="captcha_code"
-          type="text"
-          value=""
-          placeholder="Enter the code you see above"
-        />
-
-        <input
-          class="standard_button"
-          id="cryptocoin_submit"
-          name="cryptocoin_submit"
-          type="submit"
-          value="Get coins"
-        />
-      </form>-->
         <?php if(get_setting('donation_address')) { ?>
       <div class="donate">
-        <p>Please consider donating: <strong class="address"><?php if(get_setting('donation_address')) { ?></strong></p>
-        <?php } ?>
+        <p>Please consider donating: <strong class="address"></strong></p>
         <button class="btn copy">
           <svg class="copy-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
             <title>copy</title>
@@ -57,8 +25,9 @@
           </svg>
           Copy
         </button>
-        <textarea class="copy-select">tQ5eEvoF67tgAApMTNSbp8XMFdduCTvwHn</textarea>
+        <textarea class="copy-select"><?php print(get_setting('donation_address')); ?></textarea>
       </div>
+        <?php } ?>
 
     </div>
 
@@ -81,7 +50,6 @@
 
       try {
         var successful = document.execCommand('copy');
-        var msg = successful ? 'successful' : 'unsuccessful';
         document.querySelector('.address').classList.add('flash');
         setTimeout(function() {
           document.querySelector('.address').classList.remove('flash');
