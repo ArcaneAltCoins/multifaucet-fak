@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
-<<<<<<< HEAD
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68778887-4"></script>
   <script>
@@ -12,35 +10,19 @@
 
     gtag('config', 'UA-XXXXXXXX-X');
   </script>
+
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link rel="stylesheet" href="<?php echo theme_dir(); ?>css/default.css" type="text/css" />
-=======
->>>>>>> a655a86d80b035c44d1e56875b7b603f2cc7ebe7
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Linus & Kalle Lilja" />
-  <meta name="description" content="Got blueballs? Need FAK?" />
+  <meta name="description" content="FakeCoin Faucet" />
   <meta name="rating" content="General">
 
   <title><?= $title; ?></title>
 
   <link rel="stylesheet" href="<?= theme_dir(); ?>css/default.css" type="text/css" />
 
-=======
-
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Linus & Kalle Lilja" />
-  <meta name="description" content="Got blueballs? Need FAK?" />
-  <meta name="rating" content="General">
-
-  <title><?= $title; ?></title>
-
-  <link rel="stylesheet" href="<?= theme_dir(); ?>css/default.css" type="text/css" />
-
->>>>>>> a655a86d80b035c44d1e56875b7b603f2cc7ebe7
 </head>
 <body>
 
@@ -86,6 +68,6 @@
   </div>
   
   <!-- javascripts -->
-  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="<?= theme_dir(); ?>js/main.js"></script>
 </body>
 </html>
