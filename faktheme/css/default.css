@@ -118,17 +118,15 @@ input[type=submit]:hover {
   border-radius: 0.25rem;
   background: #f7f7f7;
   padding: 1rem;
-
-  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .donate p {
   font-size: 0.85rem;
   margin: 0;
+  word-wrap: break-word;
 }
-
+    
 .donate p > strong {
   padding: 0 0.25rem;
   border-radius: 0.25rem; /* Gay */
