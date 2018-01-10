@@ -16,10 +16,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="Linus & Kalle Lilja" />
-  <meta name="description" content="FakeCoin Faucet" />
+  <meta name="description" content="<?= $title; ?> - you want sum FAK?" />
+  <meta name="keywords" content="FakeCoin Faucet, FAK Faucet, Free Fakecoin, Free FAK">
   <meta name="rating" content="General">
 
-  <title><?= $title; ?></title>
+  <title><?= $title; ?> - you want sum FAK?</title>
 
   <link rel="stylesheet" href="<?= theme_dir(); ?>css/default.css" type="text/css" />
 
@@ -53,7 +54,7 @@
     </div>
 
     <div class="powered-by">
-      <a href="http://cur.lv/99zcp" title="http://www.unibia.net/crypto-faucet" target="_blank">MultiFaucet Beta v. 0.8.3</a>
+      <a href="http://www.unibia.net/crypto-faucet" title="http://www.unibia.net/crypto-faucet" target="_blank"><?php echo APPLICATION_NAME . ' ' . APPLICATION_VERSION; ?></a>
     </div>
 
     <?php if(isset($stats)) { ?>
