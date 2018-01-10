@@ -2,6 +2,8 @@
 
 A custom, more modern theme for [Multifaucet](https://github.com/tuaris/multifaucet)
 
+![preview](https://github.com/ThatKalle/multifaucet-fak/blob/master/demo/screenshot.jpg)
+
 ## Getting Started
 
 The theme is installed manually or via the /install.php feature of Multifaucet.
