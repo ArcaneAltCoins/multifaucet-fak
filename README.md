@@ -46,3 +46,5 @@ You'll have to update the file permissions once again to fit your needs and/or u
 * [Scynetoshi Blackamoto](https://github.com/Scyne)
 * [imlinus](https://github.com/imlinus)
 * [/r/FakeCoin](https://www.reddit.com/r/FakeCoin/)
+
+FAK: tRNTq6gnEoLjp2U86T4XvGnBLJQv36ZEJk
